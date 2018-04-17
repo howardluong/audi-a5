@@ -1,0 +1,171 @@
+.font-big {
+	font-size: 3em;
+}
+
+.font-med {
+	font-size: 2em;
+}
+
+.font-sm {
+	font-size: 1.5em;
+}
+
+.audi-font {
+	font-family: "Audi Type";
+}
+
+.body-bg {
+	background-color: #323232;
+}
+
+.header-bg {
+	background-image: url(bg-imgs/bg-4.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.beauty-bg {
+	background-image: url(bg-imgs/bg-1.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.innerBeauty {
+	background-image: url(bg-imgs/bg-3.jpg);
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.heading-bottom-border {
+	border-bottom: 1px solid gray;
+}
+
+.column-border-right {
+	border-right:1px solid gray;
+}
+
+.text-black {
+	color: #323232;
+}
+
+.close-middle {
+	vertical-align: center;
+  	font-size: 1.5rem;
+  	font-weight: 700;
+  	line-height: 1;
+  	color: #000;
+  	text-shadow: 0 1px 0 #fff;
+  	opacity: .5;
+}
+.close-middle:hover, .close-middle:focus {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+
+.close-middle:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.close-border {
+	padding: 5px;
+	font-size: 2em;
+	background-color: white;
+}
+
+.fadeInModal {
+    opacity: 1;
+    animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.mt-6 {
+	margin-top: 4rem;
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-6 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-7 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.moreInfo {
+	background-color: white;
+	border-radius: 45%;
+	padding: 2px;
+	font-size: 2rem;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0.2;
+}
+
+.modal-content-text {
+  position: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 70%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  top: 50%;
+  left: 10rem;
+}
+
+.modal-scrollable {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  outline: 0;
+  overflow: scroll;
+}
+
+.container-fluid-2 {
+  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.fadeInSlides {
+    opacity: 1;
+    animation: fadeIn 0.2s linear;
+}

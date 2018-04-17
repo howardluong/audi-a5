@@ -1,0 +1,413 @@
+<!doctype html>
+<html style="height: 100%;">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="a5-stylesheet.css" type="text/css">
+
+<title>Audi A5</title>
+
+</head>
+
+<body style="height: 100%;" class="body-bg">
+
+<div id="brand" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">	
+			<p class="h1 text-center text-white mt-2">Audi</p>
+		</div>
+	</div>
+</div>	
+
+<div id="logo" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">	
+			<div class="text-center">
+				<img src="img-assets/audi_rings_3.png" style="width: 250px;">
+			</div>
+		</div>
+	</div>
+</div>	
+
+<div class="header-bg mt-4">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<p class="h1 text-white text-right mr-3 mt-3 font-med">The 2018 A5 Coupé</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="performance" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 mt-4">
+			<h1 class="text-white text-center mt-2">Performance
+				<button id="morePerformance" class="btn btn-primary btn-sm ml-2" onclick="openMorePerformance()">+</button>
+			</h1>
+		</div>
+
+		<div id="price" class="col-lg-4 col-md-4 col-sm-12 column-border-right">
+			<p class="display-4 text-center text-white"><span class="h4">Starting at</span><br>$46,350</p>
+		</div>
+
+		<div id="horsePower" class="col-lg-4 col-md-4 col-sm-12 column-border-right">
+			<p class="display-4 text-center text-white"><span class="h4">Horsepower</span><br>252 HP</p>
+		</div>
+
+		<div id="100km" class="col-lg-4 col-md-4 col-sm-12">
+			<p class="display-4 text-center text-white"><span class="h4">100km/h in</span><br>5.9 Sec</p>
+		</div>
+	</div>
+</div>
+
+<div id="morePerformanceContent" class="modal-scrollable fadeInModal">
+	<div class="modal-content">
+		<div class="container-fluid">
+
+			<div id="engineRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5">Powerful performance.</h1>
+					<p class="text-black text-center m-3 display-7">The A5 Coupé boasts a 252 HP engine, delivering a performance that never ceases to impress. Turbocharged for greater power output and optimum response, this powerful engine not only delivers impressive thrust, but also excellent fuel efficiency.</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span class="close close-border" onclick="closeMorePerformance()">&times;</span>
+					<img src="img-assets/p-eng.jpg" style="width: 80%">
+				</div>
+			</div>
+
+			<div id="tfsiRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/p-tfsi.jpg" style="width: 80%" class="mt-5">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5">Take control.</h1>
+					<p class="text-black text-center m-3 display-7">The powerful TFSI engine can be paired with a snappy 6-speed manual or a smooth 7-speed S tronic transmission. Either way, the A5 Coupé is a real driver’s car.</p>
+				</div>
+			</div>
+
+			<div id="quattroRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5">Ready for anything.</h1>
+					<p class="text-black text-center m-3 display-7">Quattro with ultra combines driving dynamics with efficiency. Available with manual models, ultra technology constantly monitors driving conditions and can seamlessly adjust the quattro system to deliver maximum performance and efficiency.</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/p-quattro.jpg" style="width: 80%">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="beauty-bg mt-4">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<p class="h1 text-center mt-4 text-black"><strong>Beauty in Perfection</strong></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="carDimensions" class="container">
+	<div class="row">
+
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<p class="h1 text-center text-white mt-4">Dimensions</p>
+		</div>
+
+		<div id="sideThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+			<div class="img-thumbnail">
+				<p class="text-center h5">Side</p>
+				<img src="img-assets/d-side.jpg" style="width: 100%;" onclick="openSideModal()" class="navbar-toggler">
+			</div>
+		</div>
+
+		<div id="topThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+			<div class="img-thumbnail">
+				<p class="text-center h5">Top</p>
+				<img src="img-assets/d-top.jpg" style="width: 100%;" onclick="openTopModal()" class="navbar-toggler">
+			</div>
+		</div>
+
+		<div id="frontBackThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+			<div class="img-thumbnail">
+				<p class="text-center h5">Front and Back</p>
+				<img src="img-assets/d-frontback.jpg" style="width: 100%;" onclick="openFrontBackModal()" class="navbar-toggler">
+			</div>
+		</div>
+
+	</div>
+
+	<div id="sideModal" class="modal fadeInModal">
+		<span class="close close-border" onclick="closeSideModal()">&times;</span>
+		<div class="modal-content">
+			<img src="img-assets/d-side.jpg" style="width: 85%;" class="m-auto">
+		</div>
+	</div>
+
+	<div id="topModal" class="modal fadeInModal">
+		<span class="close close-border" onclick="closeTopModal()">&times;</span>
+		<div class="modal-content">
+			<img src="img-assets/d-top.jpg" style="width: 85%;" class="m-auto">
+		</div>
+	</div>
+
+	<div id="frontBackModal" class="modal fadeInModal">
+		<span class="close close-border" onclick="closeFrontBackModal()">&times;</span>
+		<div class="modal-content">
+			<img src="img-assets/d-frontback.jpg" style="width: 85%;" class="m-auto">
+		</div>
+	</div>
+</div>
+
+<div id="outerAspects" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<h1 class="text-center text-white mt-5">The Outer Aspects
+				<button class="btn btn-primary btn-sm ml-1" onclick="openOuterAspectsModal()">+</button>
+			</h1>
+			<p class="text-center text-white display-7">The Audi A5 Coupé is the modern interpretation of the classic coupé. A sculpted hood, short overhangs, and flowing roofline are complemented by the strong shoulder lines and prominent Singleframe grille. Inspired by the past, but built for the future.</p>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-12">
+			<img src="bg-imgs/bg-6.jpg" class="mt-5 w-100">
+		</div>
+	</div>
+</div>
+
+<div id="outerAspectsModal" class="modal-scrollable fadeInModal">
+	<div class="modal-content">
+		<div class="container-fluid">
+
+			<div id="sleekLinesRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<h1 class="text-black text-center mt-5 font-italic">The future in line design.</h1>
+					<p class="text-black text-center display-7 mt-3">Starting with the large, wide Singleframe grille and the focused stare of the headlines, lines flow along the body to craft the beautiful shape of the A5 Coupé.</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<span class="close close-border" onclick="closeOuterAspectsModal()">&times;</span>
+					<img src="img-assets/e-lines.jpg" class="mt-5" style="width:100%">
+				</div>
+			</div>
+
+			<div id="wheelsRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<img src="img-assets/e-wheels.jpg" class="mt-5" style="width:100%">
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<h1 class="text-black text-center mt-5 font-italic">Mesmerizing Wheels.</h1>
+					<p class="text-black text-center display-7 mt-3">18-inch wheels come standard with the A5 Coupé. Available in three designs, they perfectly complement the sharp looks. Optional 19-inch wheels further enhance the sporty style of the Coupé.</p>
+				</div>
+			</div>
+
+			<div id="looksRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<h1 class="text-black text-center mt-5 font-italic">Embrace the sharper look.</h1>
+					<p class="text-black text-center display-7 mt-3">For those who relish in design, the optional S Line Sport package features meticulously crafted elements, including 19-inch wheels, distinctive exterior styling, front sport seats, and a flat-bottom steering wheel.</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12"> 
+					<img src="img-assets/e-looks.jpg" class="mt-5" style="width:100%">
+					<span class="close-middle" onclick="closeOuterAspectsModal()">&times;</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="innerBeauty mt-5">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<p class="display-4 font-weight-bold text-white mt-6 ml-3 align-bottom">The Inner Beauty and Technology
+					<button class="btn btn-primary btn-sm ml-1" onclick="openInnerBeautyText()">+</button>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="innerBeautyTextModal" class="modal-scrollable fadeInModal">
+	<div class="modal-content">
+		<div class="container-fluid">
+
+			<div id="innerBeautyRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5 font-italic">The inner beauty.</h1>
+					<p class="display-6 text-black text-center display-7 mt-3">Luxury from the inside out. With comfort, style, and convenience at the core of every detail, the A5 Coupé turns every drive into an experience. Plus, you can customize your A5 Coupé with leather colour and inlay options to deliver on your unique standards of luxury. This stunning red interior features the highest quality fine Nappa leather, black headliner, illuminated door sills, and stainless steel pedals. (Not available with S Line Sport Package.)</p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<span class="close close-border" onclick="closeInnerBeautyText()">&times;</span>
+					<img src="img-assets/i-luxury.jpg" style="width: 100%" class="mt-5">
+				</div>
+			</div>
+
+			<div id="techRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/i-tech.jpg" style="width: 100%" class="mt-5 float-right">
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5 font-italic">Everything at your fingertips.</h1>
+					<p class="display-6 text-black text-center display-7 mt-3">A smart-looking interior should feature intelligent technology. The sleek and subtle MMI Touch uses handwriting recognition so you can input your destination with more comfort and speed.</p>
+				</div>
+			</div>
+
+			<div id="intelRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5 font-italic">Intelligent. Innovative. Integrated.</h1>
+					<p class="display-6 text-black text-center display-7 mt-3">Assistance and security are at the core of Audi connect. Take advantage of fully integrated and seamless assistance tools, including intelligent navigation, remote vehicle services, car finder, and roadside assistance. Experience peace-of-mind with security features, including emergency call and stolen vehicle locator. (Optional add-on feature.)</p>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/i-intel.jpg" style="width: 100%" class="mt-5">
+				</div>
+			</div>
+
+			<div id="spaceRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/i-space.jpg" style="width: 100%" class="mt-5 float-right">
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5 font-italic">Keep your personal space.</h1>
+					<p class="display-6 text-black text-center display-7 mt-3">Convenience and safety are two pillars of Audi driver assistance. The adaptive cruise control with Stop&Go not only adapts your speed to maintain a safe distance from the car in front, it can also slow you to a complete stop and resume the pre-set speed once traffic moves. (Optional add-on feature.)</p>
+				</div>
+			</div>
+
+			<div id="trafficRow" class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<h1 class="text-black text-center mt-5 font-italic">Navigate any traffic.</h1>
+					<p class="display-6 text-black text-center display-7 mt-3">Navigate traffic in your A5 Coupé with ease. The Audi traffic jam assistant uses ultrasonic sensors to combine acceleration, braking, and steering guidance at speeds under 60 km/h in congested traffic. The feature identifies lanes, vehicles, and structures to calculate a safe vehicle path, and even maintains the distance to the vehicle ahead. (Optional add-on feature.)</p>
+				</div>
+
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img-assets/i-traffic.jpg" style="width: 100%" class="mt-5">
+					<span class="close-middle" onclick="closeInnerBeautyText()">&times;</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+<div id="gallery" class="container-fluid-2">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+
+			<p class="display-3 text-white text-center mt-6 font-weight-bold">Gallery</p>
+			<p class="display-7 text-white text-center mt-2">The design is in the details. Compliment them by exploring the extended gallery.</p>
+
+			<div id="slider" class="carousel carousel-fade mt-6 w-75 m-auto" data-ride="carousel">
+
+				<ul class="carousel-indicators">
+					<li data-target="#slider" data-slide-to="0" class="active pointer"></li>
+					<li data-target="#slider" data-slide-to="1" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="2" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="3" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="4" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="5" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="6" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="7" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="8" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="9" class="pointer"></li>
+					<li data-target="#slider" data-slide-to="10" class="pointer"></li>
+				</ul>
+
+				<div class="carousel-inner">
+					<div class="carousel-item active fadeInSlides">
+						<img src="carousel/c1.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c2.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c3.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c4.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c5.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c6.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c7.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c8.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c9.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c10.jpg" class="w-100">
+					</div>
+
+					<div class="carousel-item fadeInSlides">
+						<img src="carousel/c11.jpg" class="w-100">
+					</div>
+				</div>
+
+				<a class="carousel-control-prev" href="#slider" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+
+				<a class="carousel-control-next" href="#slider" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<h1 class="text-white text-center font-weight-bold mt-6">Build your very own A5 Coupé.</h1>
+			<p class="text-white text-center display-7 mt-3">Create an Audi. Your very own is waiting. View available options to build a model to your exact specifications.</p>
+			<div class="text-center mt-6">
+				<a href="https://www.audi.ca/ca/web/en/models/a5/a5-coupe-new/build-price.html">
+					<img src="img-assets/audi_car.png" style="width:150px">
+					<p class="text-white text-center mt-3">Build and Price</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<hr>
+			<p class="text-white mt-2" style="opacity: 0.4;">&copy;2018 Audi Canada inc. *All prices are MSRP in Canadian dollars. MSRP is the Manufacturer’s Suggested Retail Price and excludes taxes, freight and PDI ($2,095), levies, fees, optional equipment, license, insurance, registration, and any dealer or other charges, where applicable. Environmental or related levies and taxes may vary by jurisdiction. Models shown for illustration purposes only and may include features that are not available on the Canadian model. While efforts are made to ensure accuracy, as errors may occur or availability may change, please see dealer for complete details and current model specifications. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="a5.js"></script>
+</body>
+</html>
