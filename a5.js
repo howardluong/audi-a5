@@ -1,7 +1,37 @@
 $(document).ready(function(){
 
-})
+});
 
+var a5Brand = new Vue({
+  el:'#brand',
+  data: {
+    title: 'Audi',
+  }
+});
+
+var performanceSection = new Vue({
+	el: '#performance',
+	data: {
+		startingAt: '$46,350',
+		hP: '252 HP',
+		kmPerHour: '5.9 Sec'
+	}
+});
+
+var timedShowPage;
+
+function loadPage() {
+    timedShowPage = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  // document.getElementById("preload").style.display = "none";
+  // document.getElementById("mainContent").style.display = "block";
+
+  document.getElementById("preload").style.opacity = 0;
+  document.getElementById("mainContent").style.opacity = 1;
+  document.getElementById("preload").style.zIndex = 0;
+}
 
 function openMorePerformance() {
 	document.getElementById('morePerformanceContent').style.display = 'block';
