@@ -13,12 +13,12 @@
 
 </head>
 
-<body onload="loadPage()" id="mainContent" style="height: 100%; overflow-x: hidden;" class="body-bg">
+<body onload="loadPage()" id="mainContent" style="height: 100%; overflow-x: hidden; overflow-y: hidden" class="body-bg">
 
 <div class="preload" id="preload">
-	<div id="preloadMessage">
+<!-- 	<div id="preloadMessage">
 		<p class="text-white fran-font">Start your engines.</p>
-	</div>
+	</div> -->
 
 	<div class="loader-frame">
 		<div class="loader1" id="loader1"></div>
@@ -61,15 +61,15 @@
 			</h1>
 		</div>
 
-		<div id="price" class="col-lg-4 col-md-4 col-sm-12 column-border-right">
+		<div id="price" class="col-lg-4 col-md-4 col-sm-12 column-border-right animation-element slide-left">
 			<p class="display-4 text-center text-white"><span class="h4">Starting at</span><br>{{startingAt}}</p>
 		</div>
 
-		<div id="horsePower" class="col-lg-4 col-md-4 col-sm-12 column-border-right">
+		<div id="horsePower" class="col-lg-4 col-md-4 col-sm-12 column-border-right animation-element slide-left2">
 			<p class="display-4 text-center text-white"><span class="h4">Horsepower</span><br>{{hP}}</p>
 		</div>
 
-		<div id="100km" class="col-lg-4 col-md-4 col-sm-12">
+		<div id="100km" class="col-lg-4 col-md-4 col-sm-12 animation-element slide-left3">
 			<p class="display-4 text-center text-white"><span class="h4">100km/h in</span><br>{{kmPerHour}}</p>
 		</div>
 	</div>
@@ -132,21 +132,21 @@
 			<p class="h1 text-center text-white mt-4">Dimensions</p>
 		</div>
 
-		<div id="sideThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+		<div id="sideThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4 animation-element slide-left">
 			<div class="img-thumbnail">
 				<p class="text-center h5">Side</p>
 				<img src="img-assets/d-side.jpg" style="width: 100%;" onclick="openSideModal()" class="navbar-toggler">
 			</div>
 		</div>
 
-		<div id="topThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+		<div id="topThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4 animation-element slide-left2">
 			<div class="img-thumbnail">
 				<p class="text-center h5">Top</p>
 				<img src="img-assets/d-top.jpg" style="width: 100%;" onclick="openTopModal()" class="navbar-toggler">
 			</div>
 		</div>
 
-		<div id="frontBackThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4">
+		<div id="frontBackThumb" class="col-lg-4 col-md-4 col-sm-12 mt-4 animation-element slide-left3">
 			<div class="img-thumbnail">
 				<p class="text-center h5">Front and Back</p>
 				<img src="img-assets/d-frontback.jpg" style="width: 100%;" onclick="openFrontBackModal()" class="navbar-toggler">
